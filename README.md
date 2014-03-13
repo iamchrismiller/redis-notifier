@@ -29,14 +29,17 @@ Using NPM + Package.json, simply just run `npm install`
   Start Redis Server : `redis-server CONF --notify-keyspace-events KExe`
 
   ```javascript
-  var eventWatcher = new RedisEventWatcher(redis, {
+  var redis = require('redis');
+  var RedisNotifier = require('redis-notifier');
+
+  var eventNotifier = new RedisNotifier(redis, {
     redis : { host : '127.0.0.1', port : 6379 },
     expire : true,
     evicted : true
   });
 
-  //Listen for event
-  eventWatcher.on('message', function(pattern, channelPattern, emittedKey) {
+  //Listen for event emission
+  eventNotifier.on('message', function(pattern, channelPattern, emittedKey) {
     var channel = this.parseMessageChannel(channelPattern);
     switch(channel.key) {
       case 'expired':
