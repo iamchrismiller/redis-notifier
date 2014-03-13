@@ -1,7 +1,7 @@
 {
   "name": "redis-notifier",
   "version": "0.1.0",
-  "description": "Keyspace Event Notifier",
+  "description": "Redis Keyspace Event Notifier",
   "author": "Chris Miller",
   "main": "index.js",
   "scripts": {

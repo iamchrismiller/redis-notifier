@@ -35,6 +35,20 @@ Using NPM + Package.json, simply just run `npm install`
     evicted : true
   });
 
+  //Listen for event
+  eventWatcher.on('message', function(pattern, channelPattern, emittedKey) {
+    var channel = this.parseMessageChannel(channelPattern);
+    switch(channel.key) {
+      case 'expired':
+          this._handleExpired(emittedKey);
+        break;
+      case "evicted":
+        this._handleEvicted(emittedKey);
+        break;
+      default:
+        logger.debug("Unrecognized Channel Type:" + channel.type);
+    }
+  });
   ```
 
   Start Redis Event Watcher `node server.js`
