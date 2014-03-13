@@ -1,6 +1,5 @@
-# Redis KeySpace Event Notifier
-
-## Description
+## Redis KeySpace Event Notifier [![Build Status](https://travis-ci.org/iamchrismiller/redis-notifier.png)](https://travis-ci.org/iamchrismiller/redis-notifier)
+[![Dependency Status](https://david-dm.org/iamchrismiller/redis-notifier.png)](https://david-dm.org/iamchrismiller/redis-notifier.png)
 
   Subscribe To Redis Keyspaced Events (v2.8.x)
   Using Redis' Newly Released Keyspaced Events Feature You can now subscribe to events that the server emits
