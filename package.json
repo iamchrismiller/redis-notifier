@@ -1,0 +1,29 @@
+{
+  "name": "redis-notifier",
+  "version": "0.1.0",
+  "description": "Keyspace Event Notifier",
+  "author": "Chris Miller",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "jasmine-node": "https://github.com/CraigCav/grunt-jasmine-node/tarball/registermultitask",
+    "grunt-contrib-jshint": "~0.8.0"
+  },
+  "dependencies": {
+    "extend": "~1.2.1",
+    "redis": "~0.9.1",
+    "log4js": "~0.6.9"
+  },
+  "keywords": [
+    "redis",
+    "keyspace",
+    "events",
+    "notifier",
+    "redis-keyspace"
+  ],
+  "license": "Apache"
+}

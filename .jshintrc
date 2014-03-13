@@ -1,0 +1,31 @@
+{
+  "curly"   : false,
+  "eqeqeq"  : true,
+  "immed"   : true,
+  "latedef" : true,
+  "newcap"  : true,
+  "noarg"   : true,
+  "sub"     : true,
+  "undef"   : true,
+  "boss"    : true,
+  "eqnull"  : true,
+  "maxerr"  : 100000,
+  "browser"     : true,
+  "globals" : {
+    "ENV"        : true,
+    "console"    : false,
+    "define"     : false,
+    "require"    : false,
+    "_"          : false,
+    "rcl"        : false,
+    "module"     : true,
+    "it"         : false,
+    "xit"        : false,
+    "describe"   : false,
+    "xdescribe"  : false,
+    "beforeEach" : false,
+    "afterEach"  : false,
+    "expect"     : false,
+    "spyOn"      : false
+  }
+}
