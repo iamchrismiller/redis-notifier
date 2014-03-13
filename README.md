@@ -33,7 +33,7 @@ Using NPM + Package.json, simply just run `npm install`
 
   var eventNotifier = new RedisNotifier(redis, {
     redis : { host : '127.0.0.1', port : 6379 },
-    expire : true,
+    expired : true,
     evicted : true
   });
 
@@ -60,6 +60,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+- 0.1.1 changed expire attribute to expired
 - 0.1.0 Initial release
 
 ## License
