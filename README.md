@@ -33,7 +33,8 @@ Using NPM + Package.json, simply just run `npm install`
   var eventNotifier = new RedisNotifier(redis, {
     redis : { host : '127.0.0.1', port : 6379 },
     expired : true,
-    evicted : true
+    evicted : true,
+    logLevel : 'DEBUG' //Defaults To INFO
   });
 
   //Listen for event emission
@@ -53,10 +54,11 @@ Using NPM + Package.json, simply just run `npm install`
   ```
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using grunt.
+In lieu of a formal style-guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using grunt.
 
 ## Release History
 
+- 0.1.2 updated logger interface
 - 0.1.1 changed expire attribute to expired
 - 0.1.0 Initial release
 

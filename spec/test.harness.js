@@ -15,11 +15,4 @@ var harness = {
   }
 };
 
-//LogLevel Hack For Tests
-var logLevelSet = false;
-if(!logLevelSet) {
-  harness.setLogLevel('INFO');
-  logLevelSet = true;
-}
-
 module.exports = harness;
