@@ -23,6 +23,8 @@ RedisClient.prototype = Object.create( EventEmitter.prototype );
 
 RedisClient.prototype.psubscribe = function(key) {};
 RedisClient.prototype.punsubscribe = function(key) {};
+RedisClient.prototype.select = function(key) {};
+
 
 //Test Helper
 RedisClient.prototype._triggerMessage = function(pattern, channel, expiredKey) {
