@@ -22,7 +22,7 @@
 
 Using NPM + Package.json, simply just run `npm install`
 
-If you are using `node_redis` pre v0.11.0 checkout the tag v0.1.2
+If you are using `node_redis` pre `v0.11.0` checkout the tag `v0.1.2`
 
 ## Usage / Configuration
 
