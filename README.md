@@ -22,6 +22,8 @@
 
 Using NPM + Package.json, simply just run `npm install`
 
+If you are using `node_redis` pre v0.11.0 checkout the tag v0.1.2
+
 ## Usage / Configuration
 
   Start Redis Server : `redis-server CONF --notify-keyspace-events KExe`
@@ -58,6 +60,7 @@ In lieu of a formal style-guide, take care to maintain the existing coding style
 
 ## Release History
 
+- 0.2.0 updated node_redis connection args, added deinit method
 - 0.1.2 updated logger interface
 - 0.1.1 changed expire attribute to expired
 - 0.1.0 Initial release
