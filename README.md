@@ -60,6 +60,7 @@ In lieu of a formal style-guide, take care to maintain the existing coding style
 
 ## Release History
 
+- 1.0.0 updated required dependencies
 - 0.2.0 updated node_redis connection args, added deinit method
 - 0.1.2 updated logger interface
 - 0.1.1 changed expire attribute to expired
