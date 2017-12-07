@@ -44,10 +44,10 @@ If you are using `node_redis` pre `v0.11.0` checkout the tag `v0.1.2`
     var channel = this.parseMessageChannel(channelPattern);
     switch(channel.key) {
       case 'expired':
-          this._handleExpired(emittedKey);
+        console.info(`Expired Key ${key}`)'
         break;
       case "evicted":
-        this._handleEvicted(emittedKey);
+        console.info(`Evicted Key ${key}`)'        
         break;
       default:
         logger.debug("Unrecognized Channel Type:" + channel.type);
